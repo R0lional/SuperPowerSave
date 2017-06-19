@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ckt.lional.superpowersave.SuperPowerSaveActivity">
+
+    <TextClock
+        android:id="@+id/clock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="26dp"
+        android:layout_marginTop="30dp"
+        android:textSize="100px"/>
+
+    <TextView
+        android:id="@+id/date_text"
+        android:layout_below="@id/clock"
+        android:layout_marginLeft="26dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+    <LinearLayout
+        android:id="@+id/table_of_contact_and_exit"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="3dp"
+        android:layout_marginLeft="3dp"
+        android:layout_width="match_parent"
+        android:layout_height="150dp">
+            <FrameLayout
+                android:id="@+id/bottom_left_fragmentcontainer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"></FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/bottom_right_fragmentcontainer"
+                android:layout_marginStart="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"></FrameLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/mid_fragmentcontainer"
+        android:layout_above="@id/table_of_contact_and_exit"
+        android:layout_marginRight="3dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginBottom="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"></FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/top_fragmentcontainer"
+        android:layout_above="@id/mid_fragmentcontainer"
+        android:layout_marginRight="3dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginBottom="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"></FrameLayout>
+
+</RelativeLayout>

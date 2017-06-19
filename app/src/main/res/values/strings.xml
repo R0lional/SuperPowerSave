@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">SuperPowerSave</string>
+    <string name="message_text_view">Message</string>
+    <string name="call_text_view">Dial</string>
+    <string name="contact_text_view">Contact</string>
+    <string name="exit_text_view">Exit</string>
+</resources>
